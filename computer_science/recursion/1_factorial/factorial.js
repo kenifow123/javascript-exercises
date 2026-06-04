@@ -1,5 +1,13 @@
-const factorial = function() {
+const factorial = function(n) {
+    if (!Number.isInteger(n) || n < 0) return undefined;
 
+    if (n === 0) return 1;
+
+    return factorial(n - 1) * n;
+
+    // if (n === 0) return 1;
+    //
+    // if (n < 0) return undefined;
 };
 
 // Do not edit below this line
